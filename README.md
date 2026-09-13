@@ -31,7 +31,7 @@ The standard Mixamo interface is excellent for previewing and downloading indivi
 
 Mixamo Batcher 2.0 is currently distributed as an unpacked Chrome extension because the original Web Store listing is no longer available.
 
-1. Download the latest `mixamo-batcher-2.0.0.zip` from the [Releases](https://github.com/unkitpi/mixamo-batcher-2.0/releases) page.
+1. Download the latest `mixamo-batcher-2.0.1.zip` from the [Releases](https://github.com/unkitpi/mixamo-batcher-2.0/releases) page.
 2. Extract the ZIP archive to a permanent folder.
 3. Open `chrome://extensions` in Chrome or Chromium.
 4. Enable **Developer mode**.
@@ -72,7 +72,7 @@ pnpm install --ignore-scripts
 pnpm build
 ```
 
-The production extension is generated in `dist/`. The packaged archive is `dist/mixamo-batcher-2.0.0.zip`.
+The production extension is generated in `dist/`. The packaged archive is `dist/mixamo-batcher-2.0.1.zip`.
 
 Run the extension smoke test with:
 

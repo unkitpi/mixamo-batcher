@@ -9,7 +9,7 @@ pnpm install --ignore-scripts
 pnpm build
 ```
 
-The distributable is written to `dist/mixamo-batcher-2.0.0.zip`.
+The distributable is written to `dist/mixamo-batcher-2.0.1.zip`.
 
 ## Install locally
 

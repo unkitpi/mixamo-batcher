@@ -1,12 +1,12 @@
 {
   "name": "mixamo-batcher",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "type": "module",
   "scripts": {
     "dev:ui": "vite build --watch",
     "dev:extension": "webpack --watch",
     "build": "rimraf dist && vite build && webpack && pnpm zip",
-    "zip": "cd dist && bestzip mixamo-batcher-2.0.0.zip *"
+    "zip": "cd dist && bestzip mixamo-batcher-2.0.1.zip *"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "1.0.0-next.31",
