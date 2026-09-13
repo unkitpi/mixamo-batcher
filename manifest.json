@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Mixamo Batcher 2.0",
+  "description": "Create and download reusable Mixamo animation packs.",
+  "version": "2.0.0",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "host_permissions": [
+    "https://www.mixamo.com/*",
+    "https://mixamo.com/*",
+    "https://mixamo-storage-prod.s3-us-west-2.amazonaws.com/*"
+  ],
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.mixamo.com/*", "https://mixamo.com/*"],
+      "js": ["content.js"],
+      "all_frames": false,
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://www.mixamo.com/*", "https://mixamo.com/*"],
+      "js": ["inject-xhr.js"],
+      "all_frames": false,
+      "run_at": "document_start",
+      "world": "ISOLATED"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["index.html", "xhr.js", "*.js", "*.css"],
+      "matches": ["https://www.mixamo.com/*", "https://mixamo.com/*"]
+    }
+  ],
+  "action": {
+    "default_title": "Mixamo Batcher"
+  }
+}
